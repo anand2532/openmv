@@ -20,6 +20,10 @@ freeze ("$(OMV_LIB_DIR)/", "machine.py")
 freeze ("$(OMV_LIB_DIR)/", "display.py")
 freeze ("$(OMV_LIB_DIR)/ml")
 
+#custom script 
+freeze ("$(OMV_LIB_DIR)/", "boot.py")
+
+
 # Networking
 require("ssl")
 require("ntptime")

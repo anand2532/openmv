@@ -456,7 +456,7 @@ async def send_long_message():
     for i in range(500):
         long_string += "_0123456789"
     i = 0
-    for i in range(1): #while True:
+    for i in range(1): #while True: 
         i = i + 1
         if i > 0 and i % 10 == 0:
             asyncio.create_task(log_status())
@@ -477,7 +477,7 @@ import constants
 async def send_scan():
     while True:
         scanmsg = constants.msg
-        # scanmsg = "HCONST"
+        #scanmsg = "HCONST"
         #f"{my_addr}"
         await send_msg("N", scanmsg, "*")
         await asyncio.sleep(10) # reduce after setup

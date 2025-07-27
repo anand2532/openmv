@@ -20,8 +20,9 @@ freeze ("$(OMV_LIB_DIR)/", "machine.py")
 freeze ("$(OMV_LIB_DIR)/", "display.py")
 freeze ("$(OMV_LIB_DIR)/ml")
 
-#custom script 
-freeze ("$(OMV_LIB_DIR)/", "boot.py")
+#custom script
+freeze ("$(OMV_LIB_DIR)/netrajaal-firmware/", "constants.py") 
+freeze ("$(OMV_LIB_DIR)/netrajaal-firmware/", "boot.py")
 
 
 # Networking
